@@ -1,0 +1,507 @@
+/* font awesome */
+
+@font-face
+{
+    font-family: "fontawesome";
+    src: 
+    
+    url('fonts/fontawesome-webfont.eot') format('embedded-opentype'),
+    
+    url('fonts/fontawesome-webfont.woff') format('woff'),
+    
+    url('fonts/fontawesome-webfont.ttf') format('truetype'),
+    
+    url('fonts/fontawesome-webfont.svg') format('svg');
+}
+
+/* règles générales */
+
+body
+{
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.un, .trois, .cinq
+{
+    background-color: #5CABD1;
+    margin: 0;
+    width: 33%;
+}
+
+.deux, .quatre, .six
+{
+    padding-left: 5%;
+    width: 56%;
+}
+
+h2
+{
+    font-size: 2em;
+}
+
+.fas
+{
+    color: gray;
+}
+
+/* (div 3, 4 et 7) Les H2 de la partie gauche */
+
+.bande
+{
+    margin: 0;
+    text-align: center;
+    color: #5CABD1;
+    background-color: gray;
+    padding: 2% 0;
+}
+
+/* (head) contient la div 1 à gauche + div 2 à droite */
+
+header
+{
+    display: flex;
+    width: 100%;
+}
+
+/* (div 1) */
+
+.un
+{
+    display: flex;
+    
+}
+
+/* Photo */
+
+img
+{
+    height: 200px;
+    width: 200px;
+    border: 10px solid gray;
+    border-radius: 50%;
+    margin: auto;
+}
+
+/* (div 2) Nom/Prénom H1 + intitulé métier H3 */
+
+.deux
+{
+    
+}
+
+h1
+{
+    font-size: 4em;
+    
+}
+
+.bleu
+{
+    color: #5CABD1;
+}
+
+h3
+{
+    font-size: 2em;
+}
+
+#souligne
+{
+    border-bottom: 4px solid #5CABD1;
+}
+
+/* (main) contient la div 3 et 4 à gauche + div 5 et 6 à droite*/
+
+main
+{
+    display: flex;
+}
+
+/* (div 3) à gauche Contenant le titre (contact) + coordonnées + le titre (bloc à propos de moi) + le texte */
+
+.trois
+{
+    
+}
+
+/* (div 4) à droite contenant le bock formation + expériences professionnelles */
+
+.quatre
+{
+    
+}
+
+/* (div 4 et 6) Les icônes des titres de droite */
+
+.fa-graduation-cap
+{
+    color: #5CABD1;
+    font-size: 3em;
+    margin-right: 5%;
+}
+
+.fa-briefcase
+{
+    color: #5CABD1;
+    font-size: 3em;
+    margin-right: 5%;
+}
+
+.fa-pencil-alt
+{
+    color: #5CABD1;
+    font-size: 3em;
+    margin-right: 5%;
+}
+
+/* (div 4) Partie formation */
+
+.souligne
+{
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid #5CABD1;
+    width: 100%;
+}
+
+
+
+/* (div 4) le conteneur des 7 lignes de 3 colonnes du bloc (formation) et des xx lignes de 3 colonnes du bloc expériences professionnelles  */
+
+.block
+{
+    display: flex;
+    flex-direction: column;
+}
+
+/* lignes des 3 blocs 1-rond/rond-cercle 2-date 3-texte (important!! = align-items: baseline; surtout pas de margin) */
+
+.ligne
+{
+    display: flex;
+    align-items: baseline;
+    max-width: 800px;
+    margin: 50px 0;
+}
+
+/* 1er bloc contenant le cercle */
+
+.puce
+{
+    flex-basis: 10%;
+}
+
+/* 1er rond bleu 1ère ligne (seulement dans le bloc (formation)) */
+
+.rond-cercle
+{
+    width: 13px;
+    height: 13px;
+    border: 3px solid #5CABD1;
+    border-radius: 50%;
+    display: flex;
+}
+
+.rond-cercle:before
+{
+    content: "";
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background-color: #5CABD1;
+    margin: auto;
+}
+
+/* le rond bleu */
+
+.rond
+{
+    background-color: #4CABD1;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+
+/* 2ème bloc contenant les dates */
+
+.date
+{
+    flex-basis: 60%;
+    font-size: 1.5em;
+    
+}
+
+/* 3ème bloc contenant le texte */
+
+.texte
+{
+    flex-basis: 60%;
+    font-size: 1.5em;
+}
+
+
+
+footer
+{
+    display: flex;
+    width: 100%;
+}
+
+/* (div 5) Les 6 icônes du bloc loisirs */
+
+.cinq
+{
+    
+}
+
+.blockicon
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+/* (div 5) block contenant 3 icônes en largeur */
+
+.troizicon
+{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+/* (div 5) block contenant chaque icône + le cercle */
+
+.icon
+{
+    display: flex;
+    width: 80px;
+    height: 80px;
+    border: 2px solid gray;
+    border-radius: 50%; 
+}
+
+/* (div 5) les différentes icônes */
+
+.fa-basketball-ball
+{
+    font-size: 50px;
+    margin: auto;
+}
+
+.fa-dumbbell
+{
+    font-size: 50px;
+    margin: auto;  
+}
+
+.fa-biking
+{
+    font-size: 50px;
+    margin: auto;
+}
+
+.fa-running
+{
+    font-size: 50px;
+    margin: auto;
+}
+
+.fa-book-reader
+{
+    font-size: 50px;
+    margin: auto;
+}
+
+.fa-gamepad
+{
+    font-size: 50px;
+    margin: auto;
+}
+
+
+/* (div 6) recommandations */
+
+.six
+{
+    
+}
+
+.line
+{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-top: 5%;
+}
+
+
+/* CSS tabllette et mobile paysage */
+
+@media all and (max-width: 1024px)
+{
+    
+    body
+    {
+        width: 100%;
+    }
+    
+    header
+    {
+        width: 100%;
+        
+    }
+    
+    .un
+    {
+        background-color: white;
+    }
+    
+    img
+    {
+        border: 10px solid #5CABD1;
+    }
+    
+    .deux
+    {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+    
+    h1
+    {
+        padding-top: 5%;
+    }
+    
+    h3
+    {
+        
+    }
+    
+    main
+    {
+        flex-direction: column;
+    }
+    
+    .trois
+    {
+        display: flex;
+        background-color: #5CABD1;
+        margin: auto;
+        width: 100%;  
+    }
+    
+    .contact, .moi
+    {
+        width: 100%;
+        
+    }
+    
+    .bande
+    {
+        margin: auto;
+        width: 100%;
+    }
+    
+    #sizing
+    {
+        width: 100%;
+    }
+    
+    .quatre
+    {
+        
+    }
+    
+    .date
+    {
+        
+    }
+    
+    .texte
+    {
+        font-size: 2em;
+    }
+    
+    .texte
+    {
+        
+    }
+    
+    footer
+    {
+        flex-direction: column;
+    }
+    
+    .blockicon
+    {
+        padding-top: 5%;
+    }
+    
+    .quatre, .cinq, .six
+    {
+        width: auto;
+    }
+    
+    .line
+    {
+        width: 95%;
+    }
+    
+    .fin
+    {
+        font-size: 1.5em;
+    }
+    
+}
+
+
+
+/* CSS mobile portrait */
+
+@media all and (max-width: 480px)
+{
+    body
+    {
+        flex-direction: column;
+    }
+    
+    header
+    {
+        flex-direction: column;
+    }
+    
+    h1
+    {
+        font-size: 40px;
+    }
+    
+    .un
+    {
+        width: 100%;
+    }
+    
+    img
+    {
+        border: 10px solid #5CABD1;
+        
+    }
+    
+    .deux
+    {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        order: -1;
+    }
+    
+    .trois
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+}
