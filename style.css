@@ -57,7 +57,7 @@ h2
     padding: 2% 0;
 }
 
-/* (head) contient la div 1 à gauche + div 2 à droite */
+/* (header) contient la div 1 à gauche + div 2 à droite */
 
 header
 {
@@ -123,7 +123,19 @@ main
 
 .trois
 {
+    
+}
+
+.contact p
+{
+    margin: 40px 0;
     text-align: center;
+}
+
+.moi p
+{
+    margin: 40px 20px;
+    text-align: justify;
 }
 
 /* (div 4) à droite contenant le bock formation + expériences professionnelles */
