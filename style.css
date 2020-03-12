@@ -241,9 +241,9 @@ main
 
 .date
 {
-    flex-basis: 20%;
+    flex-basis: 25%;
     font-size: 20px;
-    flex-basis: 30%;
+    
     font-weight: bold;
 }
 
@@ -251,9 +251,9 @@ main
 
 .texte
 {
-    margin-left: 10%;
+    margin-left: 7%;
     font-size: 20px;
-    flex-basis: 50%;
+    flex-basis: 60%;
     text-align: justify;
 }
 
