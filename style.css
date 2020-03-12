@@ -180,7 +180,7 @@ main
 
 
 
-/* (div 4) le conteneur des 7 lignes de 3 colonnes du bloc (formation) et des xx lignes de 3 colonnes du bloc expériences professionnelles  */
+/* (div 4) le conteneur des lignes de 3 colonnes du bloc (formation) et des lignes de 3 colonnes du bloc expériences professionnelles  */
 
 .block
 {
@@ -203,7 +203,7 @@ main
 
 .puce
 {
-    flex-basis: 10%;
+    flex-basis: 5%;
 }
 
 /* 1er rond bleu 1ère ligne (seulement dans le bloc (formation)) */
@@ -241,18 +241,20 @@ main
 
 .date
 {
-    flex-basis: 60%;
-    font-size: 1.5em;
-    
+    flex-basis: 20%;
+    font-size: 20px;
+    flex-basis: 30%;
+    font-weight: bold;
 }
 
 /* 3ème bloc contenant le texte */
 
 .texte
 {
-    flex-basis: 60%;
-    font-size: 1.5em;
-    flex: 2;
+    margin-left: 10%;
+    font-size: 20px;
+    flex-basis: 50%;
+    text-align: justify;
 }
 
 
@@ -272,6 +274,7 @@ footer
 
 .blockicon
 {
+    
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -409,7 +412,7 @@ footer
         display: flex;
         background-color: #5CABD1;
         margin: auto;
-        width: 100%;  
+        width: 100%;
     }
     
     .contact, .moi
@@ -434,14 +437,33 @@ footer
         
     }
     
-    .date
+    
+    .ligne
     {
         
+        width: auto;
+        margin: 30px 50px 50px 0;
+    }
+    
+    .puce
+    {
+        display: none;
+    }
+    
+    .date
+    {
+        flex-basis: 30%;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: justify;
+        margin-right: 10%;
     }
     
     .texte
     {
-        font-size: 2em;
+        font-size: 35px;
+        
+        
     }
     
     .texte
@@ -452,6 +474,7 @@ footer
     footer
     {
         flex-direction: column;
+        width: 100%;
     }
     
     .blockicon
@@ -459,7 +482,7 @@ footer
         
     }
     
-    .quatre, .cinq, .six
+    .trois, .quatre, .cinq, .six
     {
         width: auto;
     }
