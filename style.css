@@ -285,9 +285,10 @@ footer
 
 .troizicon
 {
+    width: 70%;
+    margin: auto;
     display: flex;
-    justify-content: space-around;
-    margin-bottom: 50px;
+    justify-content: space-between;
 }
 
 /* (div 5) block contenant chaque icône + le cercle */
@@ -303,28 +304,10 @@ footer
 
 /* (div 5) les différentes icônes */
 
-.fa-basketball-ball
-{
-    font-size: 50px;
-    margin: auto;
-}
-
 .fa-dumbbell
 {
     font-size: 50px;
     margin: auto;  
-}
-
-.fa-biking
-{
-    font-size: 50px;
-    margin: auto;
-}
-
-.fa-running
-{
-    font-size: 50px;
-    margin: auto;
 }
 
 .fa-book-reader
