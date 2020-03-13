@@ -89,11 +89,6 @@ img
 
 /* (div 2) Nom/Prénom H1 + intitulé métier H3 */
 
-.deux
-{
-    
-}
-
 h1
 {
     font-size: 4em;
@@ -125,11 +120,6 @@ main
 
 /* (div 3) à gauche Contenant le titre (contact) + coordonnées + le titre (bloc à propos de moi) + le texte */
 
-.trois
-{
-    
-}
-
 .contact p
 {
     margin: 40px 50px;
@@ -142,13 +132,6 @@ main
     margin: 40px 50px;
     text-align: justify;
     font-size: 20px;
-}
-
-/* (div 4) à droite contenant le bock formation + expériences professionnelles */
-
-.quatre
-{
-    
 }
 
 /* (div 4 et 6) Les icônes des titres de droite */
@@ -261,10 +244,7 @@ main
     font-size: 20px;
     flex-basis: 60%;
     text-align: justify;
-    
 }
-
-
 
 footer
 {
@@ -274,11 +254,6 @@ footer
 }
 
 /* (div 5) Les 6 icônes du bloc loisirs */
-
-.cinq
-{
-    
-}
 
 #loiz
 {
