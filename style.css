@@ -494,22 +494,22 @@ footer
         flex-direction: column;
     }
     
-    .deux
-    {
-        
-    }
-    
     h1
     {
         padding: 0;
         font-size: 30px;
         text-align: center;
-        
+        margin-bottom: inherit;
+        margin-top: 10%;
+    }
+    
+    h2
+    {
+        font-size: 27px;
     }
     
     h3
     {
-        
         text-align: center;
         font-size: 20px;
         background-color: #5DADE2;
@@ -518,12 +518,13 @@ footer
     .un
     {
         width: 100%;
-        height: 300px;
+        height: 220px;
     }
     
     img
     {
-        border: 10px solid #5DADE2;
+        margin-top: inherit;
+        border: 5px solid #5DADE2;
         width: 200px;
         height: 200px;
     }
@@ -533,6 +534,7 @@ footer
     .deux
     {
         display: flex;
+        
         width: 100%;
         margin: auto;
         order: -1;
@@ -543,6 +545,7 @@ footer
     #souligne
     {
         border-bottom: none;
+        
     }
     
     
@@ -552,6 +555,7 @@ footer
     {
         flex-direction: column;
         width: 100%;
+        
     }
     
     .trois h2
@@ -559,42 +563,68 @@ footer
         font-size: 20px;
     }
     
+    .contact p
+    {
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .moi p
+    {
+        font-size: 25px;
+    }
+    
 /* (div 4)  */  
+    
+    .quatre
+    {
+        padding-left: inherit;
+        
+    }
+    
+    span
+    {
+        display: none;
+    }
     
     .souligne
     {
-        padding-left: 0;
+        padding-left: inherit;
+        
     }
     
     .ligne
     {
         display: flex;
         flex-direction: column;
+        margin-bottom: 70px
     }
     
     .block
     {
         width: 100%;
+        margin-right: inherit;
     }
     
-    .quatre .rond
+    .rond
     {
         display: none;
     }
     
-    .quatre .date
+    .date
     {
         width: 100%;
-        font-size: 20px;
+        font-size: 25px;
         font-weight: bold;
         text-align: center;
         margin-bottom: 5%;
     }
     
-    .quatre .texte
+    .texte
     {
         width: 100%;
-        font-size: 20px;
+        font-size: 25px;
+        text-align: center;
     }
     
     .quatre .ligne
@@ -604,7 +634,8 @@ footer
     
     .quatre h2
     {
-        font-size: 19px;
+        font-size: 30px;
+        
     }
     
     .quatre .fas
@@ -613,6 +644,8 @@ footer
     }
     
 /* (div 5)  */       
+    
+    
     
     .cinq .icon
     {
@@ -630,6 +663,27 @@ footer
     .six
     {
         font-size: 10px;
+        padding-left: inherit;
+        width: 100%;
     }
     
+    
+    
+    .line
+    {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .fin
+    {
+        font-size: 25px;
+        margin: auto;
+    }
+    
+    h4
+    {
+        font-size: 25px;
+    }
 }
