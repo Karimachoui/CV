@@ -3,12 +3,12 @@
 /* -------------------------------------- */
 
 /* L013		- GENERAL  -   */
-/* L036		- GROUPE   -   */
-/* L070		- HEADER   -   */
-/* L108		- MAIN     -   */
-/* L248		- FOOTER   -   */
-/* L332		- TABLETTE -   */
-/* L490		- MOBILE   -   */
+/* L047		- GROUPE   -   */
+/* L076		- HEADER   -   */
+/* L114		- MAIN     -   */
+/* L254		- FOOTER   -   */
+/* L338		- TABLETTE -   */
+/* L496		- MOBILE   -   */
 
   /* -------------------------------------- */
  /* ==           GENERAL             == */
@@ -49,11 +49,6 @@ body
     padding-left: 5%;
     padding-right: 5%;
     width: 55%; 
-}
-
-h2, h3
-{
-    font-size: 2em;
 }
 
 /* (div 3, 4 et 7) Les H2 de la partie gauche */
