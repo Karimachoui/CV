@@ -1,15 +1,18 @@
   /* -------------------------------------- */
- /* ==            SOMMAIRE              == */
+ /* ==            SOMMAIRE            == */
 /* -------------------------------------- */
 
-/* L10		- Général -  */
-/* L10		- Groupe -  */
-/* L10		- HEADER -  */
-/* L10		- MAIN -  */
-/* L10		- FOOTER -  */
-/* L10		- MEDIA QUERIES MOBILE -  */
+/* L013		- GENERAL  -   */
+/* L036		- GROUPE   -   */
+/* L070		- HEADER   -   */
+/* L108		- MAIN     -   */
+/* L248		- FOOTER   -   */
+/* L332		- TABLETTE -   */
+/* L490		- MOBILE   -   */
 
-/* 	- Général -  */
+  /* -------------------------------------- */
+ /* ==           GENERAL             == */
+/* -------------------------------------- */
 
 body
 {
@@ -19,17 +22,6 @@ body
     flex-wrap: wrap;
     font-family: 'Montserrat', sans-serif;
 }
-
-h2
-{
-    font-size: 2em;
-}
-
-h3
-{
-    font-size: 2em;
-}
-
 
 .fas
 {
@@ -41,8 +33,9 @@ h3
     color: #5DADE2;
 }
 
-
-/*	- Groupe -  */
+  /* -------------------------------------- */
+ /* ==           GROUPE             == */
+/* -------------------------------------- */
 
 .un, .trois, .cinq
 {
@@ -58,6 +51,11 @@ h3
     width: 55%; 
 }
 
+h2, h3
+{
+    font-size: 2em;
+}
+
 /* (div 3, 4 et 7) Les H2 de la partie gauche */
 
 .bande
@@ -69,9 +67,9 @@ h3
     padding: 2% 0;
 }
 
-
-
-/* - HEADER -  */
+/* ---------------------------------------- */
+/* ==            HEADER                 */
+/*---------------------------------------- */
 
 header
 {
@@ -107,7 +105,9 @@ h1
     padding-top: 10%;
 }
 
-
+/* ---------------------------------------- */
+/* ==            MAIN                   */
+/*---------------------------------------- */
 
 #souligne
 {
@@ -127,7 +127,6 @@ main
 {
     margin: 40px 50px;
     font-size: 20px;
-    
 }
 
 .moi p
@@ -169,8 +168,6 @@ main
     border-bottom: 4px solid #5DADE2;
     width: 100%;
 }
-
-
 
 /* (div 4) le conteneur des lignes de 3 colonnes du bloc (formation) et des lignes de 3 colonnes du bloc expériences professionnelles  */
 
@@ -235,7 +232,6 @@ main
 {
     flex-basis: 25%;
     font-size: 20px;
-    
     font-weight: bold;
 }
 
@@ -249,7 +245,9 @@ main
     text-align: justify;
 }
 
-/* 	- FOOTER -  */
+/* ---------------------------------------- */
+/* ==            FOOTER                 */
+/*---------------------------------------- */
 
 footer
 {
@@ -267,7 +265,6 @@ footer
 
 .blockicon
 {
-    
     display: flex;
     justify-content: space-around;
     flex-direction: column;
@@ -330,21 +327,14 @@ footer
     justify-content: space-between;
     width: 85%;
     margin: 3% 0 3%;
-    
 }
 
-
 /* ---------------------------------------- */
-/* ==       MEDIAS QUERIS                  */
+/* ==           TABLETTE                */
 /*--------------------------------------- */
-
-
-
-/* CSS tabllette et mobile paysage */
 
 @media all and (max-width: 1024px)
 {
-    
     body
     {
         width: auto;
@@ -365,7 +355,6 @@ footer
     header
     {
         width: auto;
-        
     }
     
     .un
@@ -405,7 +394,6 @@ footer
     .contact, .moi
     {
         width: 100%;
-        
     }
     
     .bande
@@ -496,13 +484,12 @@ footer
     {
         font-size: 25px;
         margin: auto;
-    }
-    
+    } 
 }
 
-
-
-/* CSS mobile portrait */
+/* ---------------------------------------- */
+/* ==           MOBILE                  */
+/*--------------------------------------- */
 
 @media all and (max-width: 480px)
 {
@@ -567,8 +554,7 @@ footer
     
     #souligne
     {
-        border-bottom: none;
-        
+        border-bottom: none; 
     }
     
     
@@ -577,8 +563,7 @@ footer
     .trois
     {
         flex-direction: column;
-        width: auto;
-        
+        width: auto;   
     }
     
     .trois h2
