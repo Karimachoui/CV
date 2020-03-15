@@ -1,9 +1,15 @@
-/* font */
+  /* -------------------------------------- */
+ /* ==            SOMMAIRE              == */
+/* -------------------------------------- */
 
+/* L10		- Général -  */
+/* L10		- Groupe -  */
+/* L10		- HEADER -  */
+/* L10		- MAIN -  */
+/* L10		- FOOTER -  */
+/* L10		- MEDIA QUERIES MOBILE -  */
 
-
-
-/* règles générales */
+/* 	- Général -  */
 
 body
 {
@@ -13,6 +19,30 @@ body
     flex-wrap: wrap;
     font-family: 'Montserrat', sans-serif;
 }
+
+h2
+{
+    font-size: 2em;
+}
+
+h3
+{
+    font-size: 2em;
+}
+
+
+.fas
+{
+    color: gray;
+}
+
+.bleu
+{
+    color: #5DADE2;
+}
+
+
+/*	- Groupe -  */
 
 .un, .trois, .cinq
 {
@@ -25,18 +55,7 @@ body
 {
     padding-left: 5%;
     padding-right: 5%;
-    width: 55%;
-    background-color: ;
-}
-
-h2
-{
-    font-size: 2em;
-}
-
-.fas
-{
-    color: gray;
+    width: 55%; 
 }
 
 /* (div 3, 4 et 7) Les H2 de la partie gauche */
@@ -50,7 +69,9 @@ h2
     padding: 2% 0;
 }
 
-/* (header) contient la div 1 à gauche + div 2 à droite */
+
+
+/* - HEADER -  */
 
 header
 {
@@ -86,15 +107,7 @@ h1
     padding-top: 10%;
 }
 
-.bleu
-{
-    color: #5DADE2;
-}
 
-h3
-{
-    font-size: 2em;
-}
 
 #souligne
 {
@@ -236,6 +249,8 @@ main
     text-align: justify;
 }
 
+/* 	- FOOTER -  */
+
 footer
 {
     display: flex;
@@ -317,6 +332,12 @@ footer
     margin: 3% 0 3%;
     
 }
+
+
+/* ---------------------------------------- */
+/* ==       MEDIAS QUERIS                  */
+/*--------------------------------------- */
+
 
 
 /* CSS tabllette et mobile paysage */
