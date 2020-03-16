@@ -3,15 +3,15 @@
 /* -------------------------------------- */
 
 /* L013		- GENERAL  -   */
-/* L047		- GROUPE   -   */
-/* L076		- HEADER   -   */
+/* L042		- GROUPE   -   */
+/* L071		- HEADER   -   */
 /* L114		- MAIN     -   */
-/* L254		- FOOTER   -   */
-/* L338		- TABLETTE -   */
-/* L496		- MOBILE   -   */
+/* L238		- FOOTER   -   */
+/* L322		- TABLETTE -   */
+/* L516		- MOBILE   -   */
 
   /* -------------------------------------- */
- /* ==           GENERAL             == */
+ /* ==             GENERAL           == */
 /* -------------------------------------- */
 
 body
@@ -28,10 +28,16 @@ body
     color: gray;
 }
 
-.bleu
+/* icônes/H2/trait bleu parties formation/expérience professionnelle/recommandations */
+
+.souligne
 {
-    color: #5DADE2;
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid #5DADE2;
+    width: 100%;
 }
+
 
   /* -------------------------------------- */
  /* ==           GROUPE             == */
@@ -72,7 +78,7 @@ header
     width: 100%;
 }
 
-/* (div 1) */
+/* (section 1) */
 
 #un
 {
@@ -91,7 +97,7 @@ img
     margin: auto;
 }
 
-/* (div 2) Nom/Prénom H1 + intitulé métier H3 */
+/* (section 2) Nom/Prénom H1 + intitulé métier H3 */
 
 h1
 {
@@ -100,23 +106,26 @@ h1
     padding-top: 10%;
 }
 
+.bleu
+{
+    color: #5DADE2;
+}
+
 /* ---------------------------------------- */
 /* ==            MAIN                   */
 /*---------------------------------------- */
-
-#souligne
-{
-    border-bottom: 2px solid #5DADE2;
-}
-
-/* (main) contient la div 3 et 4 à gauche + div 5 et 6 à droite*/
 
 main
 {
     display: flex;
 }
 
-/* (div 3) à gauche Contenant le titre (contact) + coordonnées + le titre (bloc à propos de moi) + le texte */
+#souligne
+{
+    border-bottom: 2px solid #5DADE2;
+}
+
+/* (section 3) */
 
 .contact p
 {
@@ -131,7 +140,7 @@ main
     font-size: 20px;
 }
 
-/* (div 4 et 6) Les icônes des titres de droite */
+/* (section 4) */
 
 .fa-graduation-cap
 {
@@ -154,26 +163,12 @@ main
     margin-right: 5%;
 }
 
-/* (div 4) Partie formation */
-
-.souligne
-{
-    display: flex;
-    align-items: center;
-    border-bottom: 4px solid #5DADE2;
-    width: 100%;
-}
-
-/* (div 4) le conteneur des lignes de 3 colonnes du bloc (formation) et des lignes de 3 colonnes du bloc expériences professionnelles  */
-
 .block
 {
     display: flex;
     flex-direction: column;
     margin-top: 6%;
 }
-
-/* lignes des 3 blocs 1-rond/rond-cercle 2-date 3-texte (important!! = align-items: baseline; surtout pas de margin) */
 
 .ligne
 {
@@ -183,14 +178,14 @@ main
     margin: 30px 0;
 }
 
-/* 1er bloc contenant le cercle */
+/* 1er bloc contenant le rond et/ou le cercle */
 
 .puce
 {
     flex-basis: 5%;
 }
 
-/* 1er rond bleu 1ère ligne (seulement dans le bloc (formation)) */
+/* 1er rond bleu 1ère ligne seulement */
 
 .rond-cercle
 {
@@ -221,7 +216,7 @@ main
     border-radius: 50%;
 }
 
-/* 2ème bloc contenant les dates */
+/* les dates */
 
 .date
 {
@@ -230,7 +225,7 @@ main
     font-weight: bold;
 }
 
-/* 3ème bloc contenant le texte */
+/* le texte */
 
 .texte
 {
@@ -251,12 +246,7 @@ footer
     height: 400px;
 }
 
-/* (div 5) Les 6 icônes du bloc loisirs */
-
-#loiz
-{
-    margin-top: 25%;
-}
+/* (section 5) */
 
 .blockicon
 {
@@ -266,7 +256,12 @@ footer
     margin-top: 15%;
 }
 
-/* (div 5) block contenant 3 icônes en largeur */
+/* Les 3 icônes du bloc loisirs */
+
+#loiz
+{
+    margin-top: 25%;
+}
 
 .troizicon
 {
@@ -276,7 +271,7 @@ footer
     justify-content: space-between;
 }
 
-/* (div 5) block contenant chaque icône + le cercle */
+/* div contenant chaque icône + le cercle */
 
 .icon
 {
@@ -287,7 +282,7 @@ footer
     border-radius: 50%; 
 }
 
-/* (div 5) les différentes icônes */
+/* les 3 icônes */
 
 .fa-dumbbell
 {
@@ -308,7 +303,7 @@ footer
 }
 
 
-/* (div 6) recommandations */
+/* (section 6) */
 
 #six
 {
@@ -330,15 +325,26 @@ footer
 
 @media all and (max-width: 1024px)
 {
+    
+/* général  */    
+    
     body
     {
         width: auto;
         background-color: #CCCCCC;
     }
     
-    .cinq
+    .bande
     {
+        margin: auto;
         width: auto;
+    }
+        
+/* groupe  */ 
+    
+    #deux, #quatre, #six
+    {
+        margin-right: 0;
     }
     
     #quatre, #six
@@ -347,10 +353,14 @@ footer
         padding-left: inherit;
     }
     
+/* header   */
+    
     header
     {
         width: auto;
     }
+    
+/* (section 1)  */
     
     #un
     {
@@ -365,6 +375,8 @@ footer
         margin-top: 25%;
     }
     
+/* (section 2)  */
+    
     #deux
     {
         display: flex;
@@ -372,11 +384,15 @@ footer
         margin: auto;
     }
     
+/* main   */    
+    
     main
     {
         margin-top: 10%;
         flex-direction: column;
     }
+    
+/* (section 3)  */
     
     #trois
     {
@@ -391,27 +407,12 @@ footer
         width: 100%;
     }
     
-    .bande
-    {
-        margin: auto;
-        width: auto;
-    }
-    
     #sizing
     {
         width: auto;
     }
     
-    #six
-    {
-        padding: inherit;
-        margin: inherit;
-    }
-    
-    #deux, #quatre, #six
-    {
-        margin-right: 0;
-    }
+/* (section 4)  */
     
     #quatre
     {
@@ -459,11 +460,20 @@ footer
         text-align: center;
     }
     
+/* footer   */   
+    
     footer
     {
         flex-direction: column;
         width: 100%;
         margin-top: 15%;
+    }
+    
+/* (section 5)  */
+    
+    #cinq
+    {
+        width: auto;
     }
     
     #loiz
@@ -476,8 +486,12 @@ footer
         margin-bottom: 15%;
     }
     
+/* (section 6)  */    
+    
     #six
     {
+        padding: inherit;
+        margin: inherit;
         margin-top: 10%;
         width: auto;
     }
@@ -505,6 +519,9 @@ footer
 
 @media all and (max-width: 480px)
 {
+    
+/* général  */
+    
     body
     {
         flex-direction: column;
@@ -537,8 +554,6 @@ footer
         background-color: #5DADE2;
     }
     
-/* (div 2)  */    
-    
     #un
     {
         width: auto;
@@ -553,7 +568,7 @@ footer
         height: 200px;
     }
     
-/* (div 2)  */      
+/* (section 2)  */      
     
     #deux
     {
@@ -571,7 +586,7 @@ footer
         border-bottom: none; 
     }
     
-/* (div 3)  */      
+/* (section 3)  */      
     
     #trois
     {
@@ -595,12 +610,29 @@ footer
         font-size: 25px;
     }
     
-/* (div 4)  */  
+/* (section 4)  */  
     
     #quatre
     {
         padding: inherit;
         width: auto;
+    }
+    
+    #quatre .ligne
+    {
+        width: 100%;
+    }
+    
+    #quatre h2
+    {
+        font-size: 30px;
+        margin-left: 35px;
+    }
+    
+    #quatre .fas
+    {
+        font-size: 30px;
+        margin-left: 10px;
     }
     
     .puce
@@ -661,24 +693,7 @@ footer
         margin: auto;
     }
     
-    #quatre .ligne
-    {
-        width: 100%;
-    }
-    
-    #quatre h2
-    {
-        font-size: 30px;
-        margin-left: 35px;
-    }
-    
-    #quatre .fas
-    {
-        font-size: 30px;
-        margin-left: 10px;
-    }
-    
-/* (div 5)  */       
+/* (section 5)  */       
     
     #cinq .icon
     {
@@ -691,7 +706,12 @@ footer
         font-size: 2em;
     } 
     
- /* (div 6)  */       
+    h4
+    {
+        font-size: 25px;
+    }
+    
+ /* (section 6)  */       
     
     #six
     {
@@ -722,10 +742,5 @@ footer
     {
         font-size: 20px;
         margin: auto;
-    }
-    
-    h4
-    {
-        font-size: 25px;
-    }
+    } 
 }
