@@ -37,14 +37,14 @@ body
  /* ==           GROUPE             == */
 /* -------------------------------------- */
 
-.un, .trois, .cinq
+#un, #trois, #cinq
 {
     background-color: #5DADE2;
     margin: 0;
     width: 33%;
 }
 
-.deux, .quatre, .six
+#deux, #quatre, #six
 {
     padding-left: 5%;
     padding-right: 5%;
@@ -74,7 +74,7 @@ header
 
 /* (div 1) */
 
-.un
+#un
 {
     display: flex;
     padding-top: 6%;
@@ -310,7 +310,7 @@ footer
 
 /* (div 6) recommandations */
 
-.six
+#six
 {
     padding-bottom: 3%;
 }
@@ -341,7 +341,7 @@ footer
         width: auto;
     }
     
-    .quatre, .six
+    #quatre, #six
     {
         width: 90%;
         padding-left: inherit;
@@ -352,7 +352,7 @@ footer
         width: auto;
     }
     
-    .un
+    #un
     {
         background-color: #CCCCCC;
     }
@@ -365,7 +365,7 @@ footer
         margin-top: 25%;
     }
     
-    .deux
+    #deux
     {
         display: flex;
         flex-direction: column;
@@ -378,7 +378,7 @@ footer
         flex-direction: column;
     }
     
-    .trois
+    #trois
     {
         display: flex;
         background-color: #5DADE2;
@@ -402,18 +402,18 @@ footer
         width: auto;
     }
     
-    .six
+    #six
     {
         padding: inherit;
         margin: inherit;
     }
     
-    .deux, .quatre, .six
+    #deux, #quatre, #six
     {
         margin-right: 0;
     }
     
-    .quatre
+    #quatre
     {
         margin: auto;
     }
@@ -476,13 +476,13 @@ footer
         margin-bottom: 15%;
     }
     
-    .six
+    #six
     {
         margin-top: 10%;
         width: auto;
     }
     
-    .six .souligne
+    #six .souligne
     {
         width: 90%;
     }
@@ -537,7 +537,9 @@ footer
         background-color: #5DADE2;
     }
     
-    .un
+/* (div 2)  */    
+    
+    #un
     {
         width: auto;
         height: 230px;
@@ -553,7 +555,7 @@ footer
     
 /* (div 2)  */      
     
-    .deux
+    #deux
     {
         display: flex;
         
@@ -571,13 +573,13 @@ footer
     
 /* (div 3)  */      
     
-    .trois
+    #trois
     {
         flex-direction: column;
         width: auto;   
     }
     
-    .trois h2
+    #trois h2
     {
         font-size: 20px;
     }
@@ -595,7 +597,7 @@ footer
     
 /* (div 4)  */  
     
-    .quatre
+    #quatre
     {
         padding: inherit;
         width: auto;
@@ -659,18 +661,18 @@ footer
         margin: auto;
     }
     
-    .quatre .ligne
+    #quatre .ligne
     {
         width: 100%;
     }
     
-    .quatre h2
+    #quatre h2
     {
         font-size: 30px;
         margin-left: 35px;
     }
     
-    .quatre .fas
+    #quatre .fas
     {
         font-size: 30px;
         margin-left: 10px;
@@ -678,20 +680,20 @@ footer
     
 /* (div 5)  */       
     
-    .cinq .icon
+    #cinq .icon
     {
         width: 50px;
         height: 50px;
     }
     
-    .cinq .fas
+    #cinq .fas
     {
         font-size: 2em;
     } 
     
  /* (div 6)  */       
     
-    .six
+    #six
     {
         font-size: 10px;
         padding: inherit;
@@ -699,12 +701,12 @@ footer
         width: 100%;
     }
     
-    .six .fas
+    #six .fas
     {
         margin-left: 5%;
     }
     
-    .six h4
+    #six h4
     {
         font-size: 20px;
     }
